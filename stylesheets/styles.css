@@ -3,10 +3,22 @@
     /* outline: 1px solid red; */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body, html {
-    height: 100%;
-    width: 100%
+
+.body {
+    display: flex;
+    flex-direction: column;
 }
+header {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    background-color: lightslategray;
+}
+nav{
+    padding: 25px;
+}
+
 .container {
     padding: 20px;
     display: flex;
@@ -16,13 +28,19 @@ body, html {
 }
 
 .card {
-    height: 50%;
-    width: 40%;
+    height: auto;
+    width: 300px;
     border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 20px;
 }
 
 .card > img {
+    justify-self: flex-start;
     width: 100%;
+    /* max-height: 300px; */
     padding: 20px 20px 0px 20px;
 }
 
@@ -33,4 +51,10 @@ body, html {
 
 h1 {
     font-size: 24px;
+}
+
+footer {
+    padding: 25px;
+    width: 100%;
+    background-color: lightslategray;
 }
